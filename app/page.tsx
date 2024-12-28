@@ -3,7 +3,7 @@ import { client } from "@/sanity/lib/client";
 import { MOVIES_FETCH_QUERY } from "@/sanity/lib/queries";
 
 export default async function Home() {
-	const movies = await client.fetch(MOVIES_FETCH_QUERY);
+	const movies = await client.fetch(MOVIES_FETCH_QUERY) ;
 	return (
 		<>
 			<div className="mt-12 grid mx-4 gap-2 sm:grid-cols-2 lg:grid-cols-3 mb-5">
@@ -18,3 +18,4 @@ export default async function Home() {
 		</>
 	);
 }
+export const dynamic = "force-dynamic";
