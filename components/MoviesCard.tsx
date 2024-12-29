@@ -1,43 +1,39 @@
 import React from 'react';
 
-const MoviesCard = ({ movie }: { movie: any }) => { 
-    const { 
-        title, 
-        description, 
-        posterUrl, 
-        slug, 
-        releaseDate, 
-        trailerLink 
-    } = movie;
+const PortfolioCard = ({ portfolio }: { portfolio: any }) => {
+    const {
+        name,
+        description,
+        portfolioimage,
+        slug,
+        portofoliolink
+    } = portfolio;
 
     return (
-        <div className="movie-card bg-white shadow-md rounded-lg overflow-hidden">
-            <img 
-                src={posterUrl} 
-                alt={`${title} poster`} 
-                className="w-full h-64 object-cover" 
+        <div className="portfolio-card bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+                src={portfolioimage[0].url}
+                alt={`${name} preview`}
+                className="w-full h-64 object-cover"
             />
             <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">{title}</h2>
-                <p className="text-gray-600 text-sm mb-4">
-                    Released on: {new Date(releaseDate).toLocaleDateString()}
-                </p>
+                <h2 className="text-xl font-semibold mb-2">{name}</h2>
                 <p className="text-gray-800 text-sm mb-4">{description}</p>
                 <div className="flex justify-between items-center">
-                    <a 
-                        href={`/movies/${slug}`} 
+                    <a
+                        href={`/portfolio/${slug.current}`}
                         className="text-blue-500 hover:underline"
                     >
                         View Details
                     </a>
-                    {trailerLink && (
-                        <a 
-                            href={trailerLink} 
-                            target="_blank" 
+                    {portofoliolink && (
+                        <a
+                            href={portofoliolink}
+                            target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 hover:underline"
+                            className="text-green-500 hover:underline"
                         >
-                            Watch Trailer
+                            Live Portfolio
                         </a>
                     )}
                 </div>
@@ -46,4 +42,4 @@ const MoviesCard = ({ movie }: { movie: any }) => {
     );
 };
 
-export default MoviesCard;
+export default PortfolioCard;
