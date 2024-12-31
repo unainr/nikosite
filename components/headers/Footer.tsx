@@ -171,7 +171,7 @@ const Footer = () => {
 					<div className="border-t dark:border-neutral-800 mt-12 pt-8">
 						<div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
 							<p className="text-gray-600 dark:text-gray-400">
-								© {new Date().getFullYear()} Niko Dev. All rights reserved.
+								© {new Date().getFullYear()} Irvintechsolution. All rights reserved.
 							</p>
 							<div className="flex space-x-6">
 								<Link
