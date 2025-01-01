@@ -36,6 +36,10 @@ const Project = async () => {
 
 export default Project;
 
+export const revalidate = 60;
+
+
+
 export const metadata: Metadata = {
 	title: "Our Projects - IrvinTechSolution | Showcasing Web Development Excellence",
 	description: "Browse our portfolio of successful web development projects at IrvinTechSolution. See how we've helped businesses achieve their online goals with cutting-edge solutions.",
