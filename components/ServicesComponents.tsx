@@ -25,6 +25,18 @@ const services = [
     description: "Expert advice on technology choices, architecture decisions, and best practices for your web projects.",
     icon: "https://cdn-icons-png.flaticon.com/512/1087/1087840.png",
     features: ["Architecture Planning", "Tech Stack Selection", "Code Reviews", "Performance Optimization"]
+  },
+  {
+    title: "Social Media Management",
+    description: "Transform your social presence into a vibrant digital community. We create engaging content that sparks conversations, builds relationships, and turns followers into loyal brand advocates across all major platforms.",
+    icon: "https://cdn-icons-png.flaticon.com/512/9431/9431147.png",
+    features: ["Community Building", "Content Creation", "Engagement Strategies", "Brand Storytelling"]
+  },
+  {
+    title: "Digital Brand Growth",
+    description: "Connect with your global audience through powerful social storytelling. We craft authentic experiences that resonate across cultures, bringing your brand to life in the digital space where millions gather daily.",
+    icon: "https://cdn-icons-png.flaticon.com/512/7829/7829198.png",
+    features: ["Global Audience Reach", "Cultural Engagement", "Viral Marketing", "Influencer Partnerships"]
   }
 ];
 

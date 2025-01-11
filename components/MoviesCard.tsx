@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+
 interface Portfolio {
 	_id: string;
 	name: string;
@@ -14,8 +16,36 @@ interface Portfolio {
 	};
 	portofoliolink: string;
 }
+
 const PortfolioCard = ({ portfolio }: { portfolio: Portfolio }) => {
-	const { name, description, portfolioimage, slug, portofoliolink } = portfolio;
+	const [loading, setLoading] = useState(true);
+	useEffect(() => {
+		if (portfolio) {
+			setLoading(false);
+		}
+	}, [portfolio]);
+	if (loading) {
+		return (
+			<div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800/50 backdrop-blur-lg shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 h-full flex flex-col">
+				<div className="relative h-72 overflow-hidden animate-pulse">
+					<div className="w-full h-full bg-gray-200" />
+					<div className="absolute inset-0 bg-gray-300 opacity-50" />
+				</div>
+				<div className="p-8 flex-1 flex flex-col animate-pulse">
+					<div className="relative mb-6">
+						<div className="h-1 w-16 bg-gray-200 rounded-full mb-4" />
+						<div className="h-6 bg-gray-200 rounded" />
+					</div>
+					<p className="h-12 bg-gray-200 rounded mb-8" />
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-auto">
+						<div className="h-11 bg-gray-200 rounded" />
+					</div>
+				</div>
+			</div>
+		);
+	}
+
+	const { name, description, portfolioimage, portofoliolink } = portfolio;
 
 	return (
 		<div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800/50 backdrop-blur-lg shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 h-full flex flex-col">
@@ -24,8 +54,8 @@ const PortfolioCard = ({ portfolio }: { portfolio: Portfolio }) => {
 				<Image
 					src={portfolioimage[0].url}
 					alt={`${name} preview`}
-                    width={500}
-                    height={500}
+					width={500}
+					height={500}
 					className="transform group-hover:scale-110 transition-transform duration-700 ease-out"
 				/>
 				<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

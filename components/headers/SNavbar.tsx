@@ -99,7 +99,7 @@ const SNavbar = () => {
 								className={`${
 									isActive(item.path)
 										? resolvedTheme === "dark"
-											? "text-indigo-400 font-bold"
+											? "text-indigo-400 font-bold underline underline-offset-4"
 											: "text-indigo-600 font-bold"
 										: "hover:text-purple-400 dark:hover:text-indigo-300"
 								}`}>
