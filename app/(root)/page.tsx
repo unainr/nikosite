@@ -1,9 +1,9 @@
 import { About } from "@/components/About";
 import { AnimatedTestimonialsDemo } from "@/components/ClientsReview";
 import ContactForm from "@/components/ContactUs";
+import { DemoHeroGeometric } from "@/components/DemoHeroGeometric";
 import Experience from "@/components/Experience";
 import MoviesCard from "@/components/MoviesCard";
-import { SpotlightPreview } from "@/components/SpotLight";
 import TechStackSlider from "@/components/TechonologiesSlider";
 import { client } from "@/sanity/lib/client";
 import { PORTFOLIO_FETCH_QUERY } from "@/sanity/lib/queries";
@@ -12,7 +12,8 @@ export default async function Home() {
 	const projects = await client.fetch(PORTFOLIO_FETCH_QUERY);
 	return (
 		<>
-			<SpotlightPreview />
+			{/* <SpotlightPreview /> */}
+			<DemoHeroGeometric/>
 			<TechStackSlider />
 			<About />
 			<Experience />

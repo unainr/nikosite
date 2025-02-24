@@ -7,7 +7,7 @@ import { Metadata } from "next";
 const Project = async () => {
 	const projects = await client.fetch(PORTFOLIO_FETCH_QUERY);
 	return (
-		<section className="max-w-7xl mx-auto my-16">
+		<section className="max-w-7xl mx-auto my-20">
 			<div className="text-center mb-16">
 				<h2 className="text-3xl md:text-4xl font-bold mb-4">
 					<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">

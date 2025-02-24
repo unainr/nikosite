@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 const Contact = () => {
 	return (
-		<div className="container mx-auto px-4 py-16">
+		<div className="container mx-auto px-4 my-20">
 			<div className="text-center ">
 				<h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 mb-6">
 					Contact Us

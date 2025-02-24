@@ -14,7 +14,7 @@ const achievements = [
 
 export default function AboutPage() {
 	return (
-		<div className="min-h-screen bg-gradient-to-b ">
+		<div className="min-h-screen bg-gradient-to-b my-20 ">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
 				<div className="space-y-6">
 					<h1 className="text-4xl md:text-5xl font-extrabold text-center lg:text-left bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">
