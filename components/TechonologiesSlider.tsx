@@ -17,10 +17,9 @@ import {
 
 interface Technology {
     name: string;
-    icon: JSX.Element;
+    icon: React.ReactNode;
     color: string;
 }
-
 const technologies: Technology[] = [
     { name: "Next.js", icon: <SiNextdotjs className="text-4xl md:text-5xl" />, color: "#ffff" },
     { name: "React", icon: <SiReact className="text-4xl md:text-5xl" />, color: "#61DAFB" },
@@ -34,11 +33,11 @@ const technologies: Technology[] = [
     { name: "Sanity", icon: <SiSanity className="text-4xl md:text-5xl" />, color: "#F03E2F" },
 ];
 
-export default function TechStackSlider(): JSX.Element {
+export default function TechStackSlider(): React.ReactElement{
     const duplicatedTechnologies = [...technologies, ...technologies];
 
     return (
-        <section className="w-full  overflow-hidden ">
+        <section className="w-full  overflow-hidden my-6 ">
             <div className=" mx-auto px-4">
                 <div className="relative flex overflow-hidden">
                     <motion.div
@@ -62,7 +61,7 @@ export default function TechStackSlider(): JSX.Element {
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <motion.div
-                                    className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-slate-900/50 p-4 
+                                    className="w-20 h-20 md:w-24 md:h-24 rounded-xl  p-4 
                                              backdrop-blur-sm flex items-center justify-center 
                                              border border-slate-800 group-hover:border-indigo-500/50
                                              shadow-lg shadow-black/5"
