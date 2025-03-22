@@ -115,7 +115,7 @@ export default function MainHeader() {
 								Services
 							</Link>
 							<Link
-								href="/projects"
+								href="/project"
 								className={`text-sm font-medium ${
 									pathname === "/projects" ? "text-primary" : ""
 								}`}>
