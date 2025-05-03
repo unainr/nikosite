@@ -97,7 +97,7 @@ const Footer = () => {
 								].map((service) => (
 									<li key={service}>
 										<Link
-											href="/project"
+											href="/services"
 											className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500">
 											{service}
 										</Link>
