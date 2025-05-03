@@ -68,7 +68,7 @@ const Footer = () => {
 									<FaGithub size={24} />
 								</Link>
 								<Link
-									href="https://linkedin.com/in/yourusername"
+									href="https://www.linkedin.com/in/muhammad-moaiz-282373335/"
 									target="_blank"
 									className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500">
 									<FaLinkedin size={24} />
@@ -91,9 +91,9 @@ const Footer = () => {
 								{[
 									"Web Development",
 									"E-commerce Solutions",
-									"Custom CMS",
+									"Digital Marketing",
 									"API Integration",
-									"UI/UX Design",
+									"Forex Investment Services",
 								].map((service) => (
 									<li key={service}>
 										<Link
@@ -161,7 +161,8 @@ const Footer = () => {
 								<li>Phone: +971556150140</li>
 								<li>Phone: +254722104888</li>
 								<li>
-									P. O.Box 16526-80100 Mombasa, Kenya P.o.box 12694 sharjah UAE
+								54 STATE STREET, STE 804 #13596
+								ALBANY , NY 12207
 								</li>
 							</ul>
 						</div>
