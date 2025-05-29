@@ -83,7 +83,7 @@ export default function MainHeader() {
 					</Link>
 				</nav>
 				<div className="hidden gap-4 md:flex">
-					<ModeToggle />
+					{/* <ModeToggle /> */}
 				</div>
 				<Sheet>
 					<SheetTrigger asChild>
@@ -128,7 +128,7 @@ export default function MainHeader() {
 								}`}>
 								Contact
 							</Link>
-							<ModeToggle />
+							{/* <ModeToggle /> */}
 						</nav>
 					</SheetContent>
 				</Sheet>
