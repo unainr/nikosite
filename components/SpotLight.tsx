@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { cn } from "@/lib/utils";
 import { Spotlight } from "./ui/spotlight";
 import { FlipWords } from "./ui/flip-words";
 import { Button } from "./ui/button";
@@ -12,18 +11,18 @@ export function SpotlightPreview() {
 		"Full-Stack Solutions",
 		"Laravel Development",
 		"Shopify E-commerce",
-		"WordPress + WooCommerce",
+		"Clerk Authentication",
 		"PHP Development",
 		"Python Scraping",
 		"Next.js + Sanity Apps",
-		"React + Tailwind",
-		"Data Extraction",
-		".NET Applications",
+		"React.js",
+		"AI-Powered SaaS",
+		"Drizzle ORM + PostgreSQL",
 		"API Integration",
 		"Custom Development",
 		"Performance Tuning",
 		"Database Solutions",
-		"Web Automation",
+		"Stripe Subscriptions",
 	];
 
 	return (
