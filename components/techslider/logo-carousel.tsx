@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { TextRoll } from "./text";
 import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "./carousel";
 import Image from "next/image";
 interface AnimatedCarouselProps {
@@ -78,11 +77,6 @@ export const AnimatedCarousel = ({
     <div className={`w-full ${padding} bg-background ${containerClassName}`}>
       <div className="container mx-auto">
         <div className={`flex flex-col ${spacing}`}>
-          <h2 className={`text-xl md:text-3xl  tracking-tighter lg:max-w-xl font-regular text-left ml-2 text-foreground ${titleClassName}`}>
-
-            <TextRoll>{title}</TextRoll>
-          </h2>
-          
           <div>
             <Carousel setApi={setApi} className={`w-full ${carouselClassName}`}>
               <CarouselContent>
