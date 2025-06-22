@@ -5,25 +5,10 @@ import { Spotlight } from "./ui/spotlight";
 import { FlipWords } from "./ui/flip-words";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { words } from "@/data";
 
 export function SpotlightPreview() {
-	const words = [
-		"Full-Stack Solutions",
-		"Laravel Development",
-		"Shopify E-commerce",
-		"Clerk Authentication",
-		"PHP Development",
-		"Python Scraping",
-		"Next.js + Sanity Apps",
-		"React.js",
-		"AI-Powered SaaS",
-		"Drizzle ORM + PostgreSQL",
-		"API Integration",
-		"Custom Development",
-		"Performance Tuning",
-		"Database Solutions",
-		"Stripe Subscriptions",
-	];
+	
 
 	return (
 		<div className="h-[40rem] w-full flex md:items-center md:justify-center relative overflow-hidden bg-white dark:bg-black/[0.96]">

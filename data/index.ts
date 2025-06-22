@@ -67,3 +67,20 @@ export const testimonials = [
   },
 ];
 
+export const words = [
+		"Full-Stack Solutions",
+		"Laravel Development",
+		"Shopify E-commerce",
+		"Clerk Authentication",
+		"PHP Development",
+		"Python Scraping",
+		"Next.js + Sanity Apps",
+		"React.js",
+		"AI-Powered SaaS",
+		"Drizzle ORM + PostgreSQL",
+		"API Integration",
+		"Custom Development",
+		"Performance Tuning",
+		"Database Solutions",
+		"Stripe Subscriptions",
+	];

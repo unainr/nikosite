@@ -1,6 +1,7 @@
 import { About } from "@/components/About";
 import { AnimatedTestimonialsDemo } from "@/components/ClientsReview";
 import ContactForm from "@/components/ContactUs";
+import { DemoHeroGeometric } from "@/components/DemoHeroGeometric";
 import Experience from "@/components/Experience";
 import MoviesCard from "@/components/MoviesCard";
 import { SpotlightPreview } from "@/components/SpotLight";
@@ -12,10 +13,10 @@ export default async function Home() {
 	const projects = await client.fetch(PORTFOLIO_FETCH_QUERY);
 	return (
 		<>
-			<SpotlightPreview />
-			{/* <DemoHeroGeometric/> */}
+			{/* <SpotlightPreview /> */}
+			<DemoHeroGeometric />
 			{/* <TechStackSlider /> */}
-			<CarouselTech/>
+			<CarouselTech />
 			<About />
 			<Experience />
 
@@ -45,8 +46,8 @@ export default async function Home() {
 				</div>
 			</section>
 
-            <AnimatedTestimonialsDemo/>
-            <ContactForm/>
+			<AnimatedTestimonialsDemo />
+			<ContactForm />
 		</>
 	);
 }

@@ -1,12 +1,12 @@
 "use client";
 
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { Circle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { FlipWords } from "./ui/flip-words";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { words } from "@/data";
 
 function ElegantShape({
 	className,
@@ -93,23 +93,6 @@ function HeroGeometric({
 		}),
 	};
 
-	const words = [
-		"Full-Stack Solutions",
-		"Laravel Development",
-		"Shopify E-commerce",
-		"WordPress + WooCommerce",
-		"PHP Development",
-		"Python Scraping",
-		"Next.js + Sanity Apps",
-		"React + Tailwind",
-		"Data Extraction",
-		".NET Applications",
-		"API Integration",
-		"Custom Development",
-		"Performance Tuning",
-		"Database Solutions",
-		"Web Automation",
-	];
 
 	return (
 		<div className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden py-20 sm:py-32">
@@ -169,10 +152,10 @@ function HeroGeometric({
 						initial="hidden"
 						animate="visible"
 						className="inline-flex items-center gap-2 px-3   rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-5">
-						<Circle className="h-2 w-2 fill-blue-400/80" />
-						<span className="text-sm tracking-wide relative overflow-hidden animate-shimmer bg-[linear-gradient(110deg,rgba(255,255,255,0.3),45%,rgba(255,255,255,0.8),55%,rgba(255,255,255,0.3))] bg-clip-text text-transparent bg-[length:200%_100%]">
-							{badge}
-						</span>
+						<Sparkles className="h-3.5 w-3.5 text-blue-400" />
+            <span className="text-sm tracking-wide relative overflow-hidden animate-shimmer bg-[linear-gradient(110deg,rgba(255,255,255,0.3),45%,rgba(255,255,255,0.8),55%,rgba(255,255,255,0.3))] bg-clip-text text-transparent bg-[length:200%_100%] font-medium">
+              {badge}
+            </span>
 					</motion.div>
 
 					<motion.div
